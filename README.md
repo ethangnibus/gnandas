@@ -1,8 +1,6 @@
 # gnandas
 My solution to the Quantcast Internship Interview.
-A small clone of pandas in c++. As an example of this repo's capabilities, I'll use it to solve the following spec:
-
-[Quantcast coding_task Exercise (1).docx](https://github.com/ethangnibus/gnandas/files/8322796/Quantcast.coding_task.Exercise.1.docx)
+Here I make a small dataframe class optimised to query the most occuring cookie for a given day. As an example of this repo's capabilities, I'll use it to solve [this](https://github.com/ethangnibus/gnandas/files/8322796/Quantcast.coding_task.Exercise.1.docx) spec:
 
 Directions:
 1) Generating executables 
