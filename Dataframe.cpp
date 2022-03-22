@@ -72,11 +72,6 @@ Dataframe::Dataframe(string fname, string date)
             numTied += 1;
         }
     }
-    if (!csv.eof())
-    {
-        cerr << "CSV is empty!\n";
-    }
-
 }
 
 // Print the cookies that tie as the most active cookie.
@@ -88,6 +83,7 @@ void Dataframe::printMostActiveCookie() {
             cout << cookie << endl;
             numPrinted += 1;
         }
-        if (numPrinted == numTied) break;
+
+        if (numPrinted >= numTied) break;
     }
 }
