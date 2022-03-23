@@ -31,7 +31,7 @@ void test_date_does_not_exist(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("cookie_log.csv", "2018-12-10");
+    Dataframe df = Dataframe("tests/cookie_log.csv", "2018-12-10");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -51,7 +51,7 @@ void test_file_is_empty(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("empty.csv", "2018-12-09");
+    Dataframe df = Dataframe("tests/empty.csv", "2018-12-09");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -71,7 +71,7 @@ void test_one_entry(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("one_entry.csv", "2018-12-09");
+    Dataframe df = Dataframe("tests/one_entry.csv", "2018-12-09");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -91,7 +91,7 @@ void test_cookie_log_date07(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("cookie_log.csv", "2018-12-07");
+    Dataframe df = Dataframe("tests/cookie_log.csv", "2018-12-07");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -112,7 +112,7 @@ void test_cookie_log_date08(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("cookie_log.csv", "2018-12-08");
+    Dataframe df = Dataframe("tests/cookie_log.csv", "2018-12-08");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -133,7 +133,7 @@ void test_cookie_log_date09(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("cookie_log.csv", "2018-12-09");
+    Dataframe df = Dataframe("tests/cookie_log.csv", "2018-12-09");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -154,7 +154,7 @@ void test_win_at_two(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("ties.csv", "2018-12-10");
+    Dataframe df = Dataframe("tests/ties.csv", "2018-12-10");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -174,7 +174,7 @@ void test_large_tie_at_one(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("ties.csv", "2018-12-09");
+    Dataframe df = Dataframe("tests/ties.csv", "2018-12-09");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -195,7 +195,7 @@ void test_large_tie_at_three(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("ties.csv", "2018-12-11");
+    Dataframe df = Dataframe("tests/ties.csv", "2018-12-11");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -216,7 +216,7 @@ void test_reorder_1(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "1");
+    Dataframe df = Dataframe("tests/reorder.csv", "1");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -237,7 +237,7 @@ void test_reorder_2(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "2");
+    Dataframe df = Dataframe("tests/reorder.csv", "2");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -258,7 +258,7 @@ void test_reorder_3(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "3");
+    Dataframe df = Dataframe("tests/reorder.csv", "3");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -279,7 +279,7 @@ void test_reorder_4(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "4");
+    Dataframe df = Dataframe("tests/reorder.csv", "4");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -300,7 +300,7 @@ void test_reorder_5(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "5");
+    Dataframe df = Dataframe("tests/reorder.csv", "5");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -321,7 +321,7 @@ void test_reorder_6(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "6");
+    Dataframe df = Dataframe("tests/reorder.csv", "6");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -342,7 +342,7 @@ void test_reorder_large_1(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "7");
+    Dataframe df = Dataframe("tests/reorder.csv", "7");
     df.printMostActiveCookie();
     // END:   Code being tested
 
@@ -363,7 +363,7 @@ void test_reorder_large_2(void) {
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf());
 
     // BEGIN: Code being tested
-    Dataframe df = Dataframe("reorder.csv", "8");
+    Dataframe df = Dataframe("tests/reorder.csv", "8");
     df.printMostActiveCookie();
     // END:   Code being tested
 
